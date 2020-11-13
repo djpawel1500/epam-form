@@ -1,0 +1,21 @@
+{
+	"eslint.enable": true,
+	"npm.packageManager": "yarn",
+	"prettier.endOfLine": "lf",
+	"prettier.semi": false,
+	"prettier.tabWidth": 4,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.packageManager": "yarn",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"files.eol": "\n",
+	"prettier.useTabs": true,
+	"prettier.singleQuote": true,
+	"prettier.useEditorConfig": false,
+	"css.lint.validProperties": ["composes"],
+	"css.lint.unknownAtRules": "ignore",
+	"scss.lint.validProperties": ["composes"],
+	"scss.lint.unknownAtRules": "ignore"
+}

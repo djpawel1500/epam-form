@@ -1,0 +1,25 @@
+.formControl {
+	width: 100%;
+	input[type='date'],
+	input[type='time'] {
+		border: 1px solid #ccc;
+		background-color: white;
+		outline: none;
+		font-size: 1em;
+		padding: 4px;
+		width: 150px;
+		margin: 0 8px 4px 0;
+	}
+	input[type='date'][value=''],
+	input[type='time'][value=''] {
+		color: grey;
+	}
+	input[type='time'] {
+		width: 100px;
+		margin-left: 8px;
+	}
+	label {
+		white-space: nowrap;
+		display: inline-block;
+	}
+}
