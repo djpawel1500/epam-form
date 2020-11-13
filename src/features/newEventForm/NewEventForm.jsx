@@ -38,7 +38,7 @@ const NewEventForm = () => {
 				<div className={styles.form}>
 					<div className={clsx(styles.section, styles.success)}>
 						<h2>Success</h2>
-						<div>Event has beem created.</div>
+						<div>Event has been created.</div>
 					</div>
 				</div>
 			) : (
