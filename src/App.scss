@@ -20,3 +20,7 @@ button {
 select {
 	background-color: white;
 }
+::placeholder {
+	color: #999;
+	opacity: 1;
+}

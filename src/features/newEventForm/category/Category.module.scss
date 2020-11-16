@@ -5,3 +5,12 @@
 	padding: 8px 0;
 	width: 100%;
 }
+select.notSelected {
+	color: #999;
+}
+option {
+	color: black;
+}
+option.notSelected {
+	color: #999;
+}

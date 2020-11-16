@@ -49,14 +49,19 @@ const Category = () => {
 				placeholder="Select category"
 				required
 				value={items === null ? '' : value}
-				className={clsx(items === null && styles2.notLoaded)}
+				className={clsx(
+					!(value >= 0) && styles2.notSelected,
+					items === null && styles2.notLoaded
+				)}
 				onChange={(e) => dispatch(setValue(e.target.value))}
 			>
 				{items === null ? (
 					<option value=""></option>
 				) : (
 					<>
-						<option value={-1}>Select category</option>
+						<option value={-1} className={styles2.notSelected}>
+							Select category
+						</option>
 						{items.map((item) => (
 							<option key={item.id} value={item.id}>
 								{item.name}

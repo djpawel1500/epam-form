@@ -5,11 +5,18 @@ import store from './app/store'
 import App from './App'
 
 test('renders form submit', () => {
-	const { getByText } = render(
+	const tree = render(
 		<Provider store={store}>
 			<App />
 		</Provider>
 	)
+	expect(tree).toMatchSnapshot()
+	// console.log(tree.toJSON())
+	// const { getByText } = render(
+	// 	<Provider store={store}>
+	// 		<App />
+	// 	</Provider>
+	// )
 
-	expect(getByText(/Publish event/i)).toBeInTheDocument()
+	// expect(getByText(/Publish event/i)).toBeInTheDocument()
 })

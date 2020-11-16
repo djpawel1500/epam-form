@@ -55,6 +55,7 @@ const Coordinator = () => {
 					required
 					value={items === null ? '' : value}
 					className={clsx(
+						value === '' && styles2.notSelected,
 						error && styles.error,
 						items === null && styles2.notLoaded
 					)}
@@ -62,7 +63,9 @@ const Coordinator = () => {
 				>
 					<>
 						{(items === null || value === '') && (
-							<option value="">Select cordinator</option>
+							<option value="" className={styles2.notSelected}>
+								Select cordinator
+							</option>
 						)}
 						{items !== null &&
 							items.map((item) => (
